@@ -125,7 +125,11 @@ a{
 /*
  * CSS for the home div
  */
-
+#one{
+	background-image: url('../images/me.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	}
 
 #landingDiv{
 	height: 100%;
