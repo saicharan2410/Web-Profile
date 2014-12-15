@@ -125,11 +125,7 @@ a{
 /*
  * CSS for the home div
  */
-#one{
-	background-image: url('../images/me.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	}
+
 
 #landingDiv{
 	height: 100%;
@@ -174,7 +170,6 @@ a{
 .taglineDiv{
 	margin-left: 60px;
 	width: 80%;
-	margin-bottom: 55px;
 }
 .tagline{
 	margin-top: 50px;
@@ -240,13 +235,7 @@ a{
 /*
  * CSS for Employment
  */
- /*
-#four{
-	background-image: url('../images/emplo.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	}
-	*/
+
 #four .header{
 	color: #ffffff;
 }
@@ -278,7 +267,6 @@ a{
 }
 .accordion-content.default{
 	display: block;
-	
 }
 /*
 .carouselMainContainer{
