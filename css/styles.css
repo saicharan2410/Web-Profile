@@ -1,0 +1,379 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ * End of Eric Meyer Resets
+ */
+
+
+ /*
+  * Common Styles
+  */
+
+body{
+	font-family: sansfont;
+	font-size: 100%;
+}
+.fullscreen{
+	width: 100%;
+	height: 100%;
+}
+.blackShadow{
+	-moz-box-shadow: 0px 7px 20px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 7px 20px rgba(0,0,0,0.6);
+	box-shadow: 0px 7px 20px rgba(0,0,0,0.6);
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 1050px;
+}
+
+@font-face{
+	font-family: sansfont;
+	src: url("../fonts/openSans.ttf");
+}
+a{
+	text-decoration: none;
+}
+.navigation{
+	position:fixed;
+	top: 230px;
+	left: 87%;
+	display: none;
+}
+.navigation li{
+	font-size: 1.2em;
+	color:#ffae00;
+	display:block;
+	line-height:30px;
+	margin-bottom:10px;
+	font-weight:bold;
+	-webkit-transition: all .2s ease-in-out;
+	text-align:left;
+	font-weight: bold;
+}
+.navigation li:hover, .navigation li.navActive{
+	font-size:1.8em;
+	cursor:pointer;
+}
+.containerDiv{
+	padding-top: 80px;
+}
+.containerDiv .header{
+	padding: 10px 0px 10px 15px;
+	font-size: 2.2em;
+	margin-bottom: 65px;
+	letter-spacing: 3px;
+}
+.containerDiv .headerYellow{
+	border-left: 5px solid #ffae00;
+}
+.containerDiv .headerRed{
+	border-left: 5px solid #df1d1d;
+}
+#one, #four, #six{
+	background-color: #336699;
+}
+
+/*
+ * Custom CSS
+ */
+
+/*
+ * CSS for the home div
+ */
+#one{
+	background-image: url('../images/me.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+#landingDiv{
+	height: 100%;
+	display: table;
+}
+#landingDiv .nameAndDescription{
+	display: table-cell;
+	vertical-align: middle;
+
+}
+.nameAndDescription h1{
+	font-size: 6em;
+	/*display: none;*/
+	color: #003366;
+	margin-bottom: 10px;
+	font-weight: bold;
+    line-height: 1em;
+}
+.nameAndDescription p{
+	font-size: 1.5em;
+	margin-left: 6px;
+	display: none;
+	color: #ffffff;
+}
+
+/* 
+ * CSS for About Me 
+ */
+
+#two .header{
+	color: #000000;
+}
+#aboutme .contentDiv{
+	width: 50%;
+	color: #000000;
+}
+.content{
+	text-align: justify;
+	line-height: 2em;
+	font-weight: 600;
+}
+.taglineDiv{
+	margin-left: 60px;
+	width: 80%;
+	margin-bottom: 55px;
+}
+.tagline{
+	margin-top: 50px;
+	font-size: 1.8em;
+	text-align: center;
+	color: #ffae00;
+}
+
+/*
+ * CSS for Education
+ */
+
+#three{
+	background-image: url('../images/book.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+#three .header{
+	color: #ffffff;
+}
+.masters{
+	overflow: hidden;
+}
+.educationDuration{
+	background-color: #000000;
+	color: #ffae00;
+	float: left;
+	display: inline-block;
+	font-weight: bold;
+	border-radius: 900px 900px;
+	padding: 40px 0px;
+	width: 165px;
+	line-height: 30px;
+	font-size: 1.2em;
+	text-align: center;
+}
+.educationDescription{
+	margin-left: 80px;
+	color: #000000;
+	background-color: #ffae00;
+	float: left;
+	width: 630px;
+}
+.educationDescription{
+	padding: 15px 0px 20px 40px;
+}
+.educationTitle{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.educationPlace{
+	padding: 10px 0px 20px 0px;
+}
+.educationCoursework{
+	line-height: 25px;
+}
+.undergrad{
+	clear: both;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+/*
+ * CSS for Employment
+ */
+ /*
+#four{
+	background-image: url('../images/emplo.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	}
+	*/
+#four .header{
+	color: #ffffff;
+}
+#accordion{
+	width: 800px;
+}
+.accordion-toggle{
+	cursor: pointer;
+	background: #003366;
+	padding:10px 0px 10px 10px;
+	color: #ffcc66;
+}
+.accordion-container{
+	margin-bottom: 15px;
+}
+.accordion-toggle h2{
+	font-size: 1.3em;
+	margin-bottom: 5px;
+}
+.accordion-toggle h4{
+	font-size: 0.8em;
+}
+.accordion-content{
+	display: none;
+	padding: 15px 0px;
+	background-color: #336699;
+	padding:20px 0px 20px 30px;
+	color: #ffcc66;
+}
+.accordion-content.default{
+	display: block;
+	
+}
+/*
+.carouselMainContainer{
+	margin-left: 250px;
+	overflow: hidden;
+}
+.carouselWrapper{
+	width:600px;
+	background-color: #ffffff;
+	/*height: 100px;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.prev, .next{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	border: 2px solid #000000;
+	padding: 5px;
+	cursor: pointer;
+}
+.slider{
+	width:1800px;
+	position:relative;
+	left:0px;
+	overflow: hidden;
+}
+.slider .sliderList{
+	float:left;
+	padding:15px 10px 0px 15px;
+	width:600px;
+	height: 300px;
+	box-sizing: border-box;
+	background-color: #ffae00;
+	color: #ffffff;
+}
+.slider .sliderList h3{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #000000;
+}
+.slider .sliderList h5{
+	margin-top: 10px;
+	padding-bottom: 5px;
+	color: #000000;
+	border-bottom: 1px solid #000000;
+}
+.slider .sliderList p{
+	margin-top: 25px;
+}
+.aboutWork{
+	margin-top: 25px;
+	color: #000000;
+}
+.aboutWork li{
+	margin-bottom: 10px;
+}*/
+
+/*
+ * CSS for Skills
+ */
+
+.skillRow{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.square{
+	width: 130px;
+}
+.rectangle{
+	width: 270px;
+}
+.commonSkills{
+	float: left;
+	line-height: 110px;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.bgYellow{
+	background-color: #ffae00;
+	color: #000000;
+}
+.bgBlack{
+	background-color: #000000;
+	color: #ffae00;
+}
+.bgRed{
+	background-color: #df1d1d;
+	color: #ffffff;
+}
+
+/*
+ * CSS for other Work
+ */
+
